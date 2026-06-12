@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>作品詳情</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="works.js" defer></script>
+  <script src="detail.js" defer></script>
+
+  <style>
+
+         body {font-family: Microsoft JhengHei, "Microsoft JhengHei", sans-serif;
+        background-color: #fffadf;text-align: left;}
+        img {width: 300px;height: 300px}
+
+        .back-link {position: fixed; left: 20px; top: 10px;
+                    text-decoration: none; color: rgb(0, 0, 0);
+                    font-size: 20px; }
+        .detail-page {max-width: 900px; margin-top: 60px; margin-left: 60px; padding: 0 20px;}
+        .work-meta p {display: grid; grid-template-columns: 65px 1fr; column-gap: 50px; margin: 16px 0}
+        .work-meta strong {font-weight: bold;}
+
+        
+    </style>
+
+</head>
+
+
+
+<body>
+  <main class="detail-page">
+
+    <a class="back-link" href="index.html"> Back</a>
+
+    <section class="detail-hero">
+      <img id="work-image" src="" alt="">
+    </section>
+
+    <section class="detail-content">
+      <h1 id="work-title"></h1>
+
+      <div class="work-meta">
+        <p><strong>Event.</strong>
+            <span id="work-event"></span>
+        </p>
+
+        <p><strong>Time.</strong>
+            <span id="work-time"></span>
+        </p>
+
+        <p><strong>Content.</strong>
+            <span id="work-content"></span>
+        </p>
+
+      </div>
+
+      <p id="work-description"></p>
+    </section>
+
+  </main>
+</body>
+</html>
