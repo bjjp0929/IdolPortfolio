@@ -23,6 +23,28 @@
         .work-meta p {display: grid; grid-template-columns: 65px 1fr; column-gap: 50px; margin: 16px 0}
         .work-meta strong {font-weight: bold;}
 
+        @media (max-width: 768px) {.detail-page {margin: 60px 0px; padding: 0px}
+                                   .detail-hero img {display: block; margin: 0 auto; max-width: 90%;
+                                                     height: auto}
+                                   
+                                  #work-title {text-align: center;} 
+                                 }
+
+        #work-content span:not(:last-child)::after {
+  content: " / ";
+}
+
+@media (max-width: 768px) {
+  #work-content span {display: block; margin-bottom: 6px; }
+
+ #work-content span:last-child {
+  margin-bottom: 0;
+}
+
+  #work-content span:not(:last-child)::after {
+    content: "";
+  }
+}
         
     </style>
 
