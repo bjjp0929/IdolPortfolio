@@ -3,7 +3,7 @@ const works = {
     title: "2024 Birthday Cake Event",
     event: "Birthday Support",
     time: "2024",
-    content: "Cake design / Event planning / Fan support",
+    content: ["Cake design", "Event planning", "Fan support"],
     image: "IMG_7580.jpg",
     description: "這裡寫詳細介紹。"
 },
