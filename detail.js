@@ -9,7 +9,19 @@ if (work) {
   document.getElementById("work-title").textContent = work.title;
   document.getElementById("work-event").textContent = work.title;
   document.getElementById("work-time").textContent = work.time;
-  document.getElementById("work-content").textContent = work.content;
+
+  
+  const contentBox = document.getElementById("work-content");
+
+contentBox.innerHTML = "";
+
+work.content.forEach(item => {
+  const span = document.createElement("span");
+  span.textContent = item;
+  contentBox.appendChild(span);
+});
+
+
   document.getElementById("work-description").textContent = work.description;
 
   const image = document.getElementById("work-image");
