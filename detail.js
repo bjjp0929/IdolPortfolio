@@ -30,6 +30,6 @@ work.content.forEach(item => {
 } else {
   document.querySelector(".detail-page").innerHTML = `
     <p>找不到這個作品。</p>
-    <a href="index.html">← 回到首頁</a>
+    <a href="index.html">Back</a>
   `;
 }
